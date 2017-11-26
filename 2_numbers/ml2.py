@@ -72,13 +72,13 @@ for x in range(0, len(predict_target)):
         if save_images:
             plt.figure(1, figsize=(3, 3))
             plt.imshow(predict_images[x], cmap=plt.cm.gray_r, interpolation='nearest')
-            plt.savefig('failures/guess_' + str(result[x]) + '_is_' + str(predict_target[x]) + '_id_ ' + str(x) + '.png')
+            plt.savefig('failures/guess_' + str(result[x]) + '_is_' + str(predict_target[x]) + '.png')
         fail = fail + 1
     else:
         if save_images:
             plt.figure(1, figsize=(3, 3))
             plt.imshow(predict_images[x], cmap=plt.cm.gray_r, interpolation='nearest')
-            plt.savefig('successes/guess_' + str(result[x]) + '_is_' + str(predict_target[x]) + '_id ' + str(x) + '.png')
+            plt.savefig('successes/guess_' + str(result[x]) + '_is_' + str(predict_target[x]) + '.png')
         success = success + 1
 
 print("Failures: " + str(fail))
