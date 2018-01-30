@@ -15,3 +15,4 @@ result = clf.predict(X_new)
 print(clf.predict_proba(X_new))
 print(result)
 print(predict_targets)
+
